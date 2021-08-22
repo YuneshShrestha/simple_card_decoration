@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Text</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .container{
+          width: 70%;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 1rem;
+          row-gap: 1rem;
+
+        
+      }
+      .card{
+          border: 1px solid black;
+          border-radius: 20px;
+          text-align: left;
+          padding-left: 1rem;
+          padding-bottom: 1rem;
+          
+          
+      }
+      .card .card_data h1,.card .card_data p,.card .card_data button{
+          padding-bottom: 0.7rem;
+      }
+      .bold_text{
+        font-weight: 700;
+      }
+      .card .card_data button{
+          width: 7rem;
+          height: 3rem;
+          /* text-align: center; */
+          padding-top: 0.8rem;
+          border: none;
+          color: white;
+          background-color: rgb(1, 1, 63);
+          border-radius: 0.5rem;
+      }
+      
+    </style>
+</head>
+<body>
+   <div >
+    <div class="container">
+        <div class="card">
+            <img src="" alt="">
+            <div class="card_data">
+                <h1>Burger</h1>
+                <p class="bold_text">$99</p>
+                <p class="bold_text">Burger description goes here</p>
+                <button class="bold_text">Order Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <div class="card_data">
+                <h1>Burger</h1>
+                <p class="bold_text">$99</p>
+                <p class="bold_text">Burger description goes here</p>
+                <button class="bold_text">Order Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <div class="card_data">
+                <h1 class="bold_text">Burger</h1>
+                <p class="bold_text">$99</p>
+                <p class="bold_text">Burger description goes here</p>
+                <button class="bold_text">Order Now</button>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
